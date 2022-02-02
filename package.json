@@ -1,6 +1,6 @@
 {
 	"name": "is-resize",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Determine whether supplied string is a valid resize name",
 	"main": "src/index.js",
 	"repository": "https://github.com/nebe-app/is-resize.git",

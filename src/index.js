@@ -33,10 +33,10 @@ module.exports = function isResize(value, outputCategory = null) {
 
 	switch (outputCategory) {
 		case 'audio':
-			regexes.push(...audioRegex);
+			regexes = audioRegex;
 			break;
 		case 'print':
-			regexes.push(...printRegex);
+			regexes = printRegex;
 			break;
 		case 'html':
 		case 'image':

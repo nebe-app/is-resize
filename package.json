@@ -5,5 +5,11 @@
 	"main": "src/index.js",
 	"repository": "https://github.com/nebe-app/is-resize.git",
 	"author": "Patrik Janosdeak <patrik.janosdeak@isobar.com>",
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"jest": "^27.4.7"
+	},
+	"scripts": {
+		"test": "jest"
+	}
 }

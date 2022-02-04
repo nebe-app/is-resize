@@ -29,7 +29,7 @@ module.exports = function isResize(value, outputCategory = null) {
 		throw new Error('Supplied outputCategory must be a valid output category.');
 	}
 
-	let regexes = [];
+	let regexes;
 
 	switch (outputCategory) {
 		case 'audio':
@@ -42,11 +42,11 @@ module.exports = function isResize(value, outputCategory = null) {
 		case 'image':
 		case 'video':
 		case 'fallback':
-			regexes.push(...sizeRegex);
+			regexes = sizeRegex;
 			break;
 		case null:
 		default:
-			regexes.push(...audioRegex, ...printRegex, ...sizeRegex);
+			regexes = [...audioRegex, ...printRegex, ...sizeRegex];
 			break;
 	}
 
